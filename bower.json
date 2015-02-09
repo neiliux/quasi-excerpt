@@ -1,0 +1,24 @@
+{
+  "name": "quasi-excerpt",
+  "version": "0.0.1",
+  "homepage": "https://github.com/neiliux/quasi-excerpt",
+  "authors": [
+    "Neil Breeden III <neil@htmlbuffet.com>"
+  ],
+  "main": "src/quasiExcerpt.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15"
+  }
+}
