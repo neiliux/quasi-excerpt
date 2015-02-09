@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/neiliux/quasi-excerpt/issues"
   },
-  "homepage": "https://github.com/neiliux/quasi-excerpt"
+  "homepage": "https://github.com/neiliux/quasi-excerpt",
+  "devDependencies": {
+    "grunt-bowercopy": "^1.2.0"
+  }
 }
