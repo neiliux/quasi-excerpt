@@ -1,8 +1,11 @@
-// TODO: Implement.
 define([], function () {
     return {
-        foobar: function() {
-            console.log('alive...');
+      getPseudoStylePropertyValue: function(selector, pseudoStyle, property) {
+        var item = document.querySelector(selector);
+        if (!item) {
+          return null;
         }
-    }
+        return window.getComputedStyle(item, pseudoStyle).getPropertyValue(property);
+      }
+    };
 });
