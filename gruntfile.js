@@ -19,6 +19,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-devserver');
     grunt.loadNpmTasks('grunt-karma');
-    
-    grunt.registerTask('default', ['karma', 'devserver']);
+
+    grunt.registerTask('default', ['karma']);
+    grunt.registerTask('dev', ['karma', 'devserver']);
 };

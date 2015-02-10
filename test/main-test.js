@@ -27,8 +27,6 @@ require.config({
             exports: '$'
         }
     },
-    // dynamically load all test files
     deps: allTestFiles,
-    // we have to kickoff jasmine, as it is asynchronous
     callback: window.__karma__.start
 });
