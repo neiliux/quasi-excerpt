@@ -6,12 +6,9 @@ module.exports = function (config) {
         frameworks: ['jasmine', 'requirejs'],
         files: [
             'test/main-test.js',
-            //'test/smorgasbord-build.css',
-            //{pattern: 'test/main-css.js', included: false},
-            //{pattern: 'test/bower/*.js', included: false},
             {pattern: 'bower_components/jquery/dist/jquery.js', included: false},
-	    {pattern: 'bower_components/chai/chai.js', included: false},
-	    {pattern: 'bower_components/chai-jquery/chai-jquery.js', included: false},
+	          {pattern: 'bower_components/chai/chai.js', included: false},
+	          {pattern: 'bower_components/chai-jquery/chai-jquery.js', included: false},
             {pattern: 'src/**/*.js', included: false},
             {pattern: 'test/**/*Tests.js', included: false}
         ],

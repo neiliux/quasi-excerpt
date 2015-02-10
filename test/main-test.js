@@ -16,12 +16,9 @@ Object.keys(window.__karma__.files).forEach(function (file) {
 });
 
 require.config({
-    // Karma serves files under /base, which is the basePath from your config file
     baseUrl: '/base',
     paths: {
         'jquery': 'bower_components/jquery/dist/jquery',
-    //     //'underscore': '../lib/underscore',
-    //     'load_css': 'test/main-css',
         'chai': 'bower_components/chai/chai',
         'chai-jquery': 'bower_components/chai-jquery/chai-jquery'
 	  },
