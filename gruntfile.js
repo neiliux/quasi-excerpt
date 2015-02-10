@@ -9,11 +9,16 @@ module.exports = function (grunt) {
                 base: '.',
                 async: true
             }
-        }
+        },
+        karma: {
+            unit: {
+                configFile: "karma.conf.js"
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-devserver');
+    grunt.loadNpmTasks('grunt-karma');
     
-    grunt.registerTask('default', ['devserver']);
+    grunt.registerTask('default', ['karma', 'devserver']);
 };
-
