@@ -1,4 +1,3 @@
-/*global window, document */
 define([], function () {
     return {
         getPseudoStylePropertyValue: function(selector, pseudoStyle, property) {
@@ -8,5 +7,5 @@ define([], function () {
             }
             return window.getComputedStyle(item, pseudoStyle).getPropertyValue(property);
         }
-}   ;
+    };
 });

@@ -1,4 +1,3 @@
-/*global module */
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
@@ -15,11 +14,18 @@ module.exports = function (grunt) {
                 configFile: "karma.conf.js"
             }
         },
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc'
+            },
+            all: ['*.js', 'src/**/*.js', 'test/**/*.js']
+        }
     });
 
     grunt.loadNpmTasks('grunt-devserver');
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('default', ['karma']);
-    grunt.registerTask('dev', ['karma', 'devserver']);
+    grunt.registerTask('default', ['jshint', 'karma']);
+    grunt.registerTask('dev', ['jshint', 'karma', 'devserver']);
 };

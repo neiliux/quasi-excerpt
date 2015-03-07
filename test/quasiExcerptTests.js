@@ -1,4 +1,4 @@
-define(['require', 'jquery', 'chai', '../src/quasiExcerpt'], function(require, $, chai) {
+define(['require', 'jquery', 'chai', '../src/quasiExcerpt'], function(require, $) {
     var quasiExcerpt = require('../src/quasiExcerpt');
     var expect = require("chai").expect;
 
